@@ -1,0 +1,159 @@
+/* Food, LLC — Module 3 assignment
+   Bootstrap 3 handles the responsive grid and collapsible navbar.
+   These rules customize the colors, typography, spacing, and menu panel. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #292929;
+  background-color: #ffffff;
+}
+
+/* Navbar scrolls normally with the page; it is not fixed or sticky. */
+.navbar.navbar-default {
+  background-color: #e7e7e7;
+  border: 1px solid #b8b8b8;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #222222 !important;
+  height: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.navbar-toggle {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border-color: #555555 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+
+/* Mobile dropdown links occupy their own rows below the navbar brand. */
+#mobile-menu {
+  clear: both;
+}
+
+#mobile-menu .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mobile-menu .navbar-nav > li > a {
+  text-align: center;
+  font-size: 1.1em;
+  color: #222222;
+  background-color: #f7f7f7;
+  border-top: 1px solid #c9c9c9;
+}
+
+#mobile-menu .navbar-nav > li > a:hover,
+#mobile-menu .navbar-nav > li > a:focus {
+  background-color: #e3e3e3;
+}
+
+/* Main heading */
+.page-title {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  color: #222222;
+}
+
+/* The assignment's single full-width, tall section. */
+.menu-section {
+  background-color: #eeeeee;
+  border: 1px solid #b8b8b8;
+  padding: 18px 28px 24px;
+  margin-bottom: 30px;
+  min-height: 900px;
+}
+
+.section-title {
+  font-size: 1.45em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 14px;
+  color: #222222;
+  scroll-margin-top: 12px;
+}
+
+.menu-section p {
+  margin: 0 0 22px;
+}
+
+.closing-note {
+  margin-top: 30px !important;
+}
+
+.back-to-top {
+  text-align: right;
+  margin-top: 26px;
+}
+
+a {
+  color: #245b83;
+}
+
+a:hover,
+a:focus {
+  color: #163b56;
+  text-decoration: underline;
+}
+
+/* Desktop/tablet: keep the links available only in the mobile dropdown,
+   matching the common Bootstrap 3 assignment pattern. */
+@media (min-width: 768px) {
+  .navbar-brand {
+    padding-left: 15px;
+  }
+
+  .menu-section {
+    padding: 22px 32px 28px;
+  }
+
+  .page-title {
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1.65em;
+  }
+
+  .page-title {
+    font-size: 1.9em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .menu-section {
+    padding: 14px 18px 22px;
+    min-height: 900px;
+  }
+
+  .section-title {
+    font-size: 1.35em;
+  }
+}
