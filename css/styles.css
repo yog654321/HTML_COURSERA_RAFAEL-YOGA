@@ -1,54 +1,49 @@
-/* Custom stylesheet for Module 3 Assignment 3.
-   Keep styles here; do not use inline styles in the HTML. */
+/* Food, LLC — Module 3 assignment
+   Bootstrap 3 handles the responsive grid and collapsible navbar.
+   These rules customize the colors, typography, spacing, and menu panel. */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #292929;
+  background-color: #ffffff;
 }
 
-.navbar {
+/* Navbar scrolls normally with the page; it is not fixed or sticky. */
+.navbar.navbar-default {
+  background-color: #e7e7e7;
+  border: 1px solid #b8b8b8;
   border-radius: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
-.navbar-default {
-  background-color: #d7d7d7;
-  border-color: #777;
-}
-
-.navbar-default .navbar-brand {
-  color: #222;
+.navbar-brand {
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: 700;
+  color: #222222 !important;
+  height: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-  color: #000;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #333;
+.navbar-toggle {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border-color: #555555 !important;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #333;
+  background-color: #333333;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #eee;
-}
-
-/* Full-width mobile dropdown with a contrasting background. */
+/* Mobile dropdown links occupy their own rows below the navbar brand. */
 #mobile-menu {
-  border-top: 1px solid #777;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: #fff;
+  clear: both;
 }
 
 #mobile-menu .navbar-nav {
@@ -57,48 +52,108 @@ body {
 }
 
 #mobile-menu .navbar-nav > li > a {
-  color: #222;
   text-align: center;
-  border-bottom: 1px solid #777;
-  font-size: 1.15em;
+  font-size: 1.1em;
+  color: #222222;
+  background-color: #f7f7f7;
+  border-top: 1px solid #c9c9c9;
 }
 
 #mobile-menu .navbar-nav > li > a:hover,
 #mobile-menu .navbar-nav > li > a:focus {
-  background-color: #eee;
+  background-color: #e3e3e3;
 }
 
+/* Main heading */
 .page-title {
-  font-size: 2.2em;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  color: #222222;
 }
 
+/* The assignment's single full-width, tall section. */
 .menu-section {
-  min-height: 1000px;
-  padding: 15px 25px 30px;
-  margin-bottom: 25px;
-  background-color: #bdbdbd;
-  border: 1px solid #222;
+  background-color: #eeeeee;
+  border: 1px solid #b8b8b8;
+  padding: 18px 28px 24px;
+  margin-bottom: 30px;
+  min-height: 900px;
 }
 
-.menu-section h2 {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-size: 1.6em;
-  font-weight: bold;
+.section-title {
+  font-size: 1.45em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 14px;
+  color: #222222;
+  scroll-margin-top: 12px;
 }
 
 .menu-section p {
-  font-size: 1.05em;
-  line-height: 1.65;
-  margin-bottom: 18px;
+  margin: 0 0 22px;
 }
 
-/* On tablet/desktop, Bootstrap's visible-xs hides the mobile controls. */
+.closing-note {
+  margin-top: 30px !important;
+}
+
+.back-to-top {
+  text-align: right;
+  margin-top: 26px;
+}
+
+a {
+  color: #245b83;
+}
+
+a:hover,
+a:focus {
+  color: #163b56;
+  text-decoration: underline;
+}
+
+/* Desktop/tablet: keep the links available only in the mobile dropdown,
+   matching the common Bootstrap 3 assignment pattern. */
 @media (min-width: 768px) {
-  #mobile-menu {
-    display: none !important;
+  .navbar-brand {
+    padding-left: 15px;
+  }
+
+  .menu-section {
+    padding: 22px 32px 28px;
+  }
+
+  .page-title {
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1.65em;
+  }
+
+  .page-title {
+    font-size: 1.9em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .menu-section {
+    padding: 14px 18px 22px;
+    min-height: 900px;
+  }
+
+  .section-title {
+    font-size: 1.35em;
   }
 }
