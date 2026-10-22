@@ -1,0 +1,104 @@
+/* Custom stylesheet for Module 3 Assignment 3.
+   Keep styles here; do not use inline styles in the HTML. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.navbar-default {
+  background-color: #d7d7d7;
+  border-color: #777;
+}
+
+.navbar-default .navbar-brand {
+  color: #222;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #333;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #eee;
+}
+
+/* Full-width mobile dropdown with a contrasting background. */
+#mobile-menu {
+  border-top: 1px solid #777;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+}
+
+#mobile-menu .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mobile-menu .navbar-nav > li > a {
+  color: #222;
+  text-align: center;
+  border-bottom: 1px solid #777;
+  font-size: 1.15em;
+}
+
+#mobile-menu .navbar-nav > li > a:hover,
+#mobile-menu .navbar-nav > li > a:focus {
+  background-color: #eee;
+}
+
+.page-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.menu-section {
+  min-height: 1000px;
+  padding: 15px 25px 30px;
+  margin-bottom: 25px;
+  background-color: #bdbdbd;
+  border: 1px solid #222;
+}
+
+.menu-section h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.menu-section p {
+  font-size: 1.05em;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+/* On tablet/desktop, Bootstrap's visible-xs hides the mobile controls. */
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}

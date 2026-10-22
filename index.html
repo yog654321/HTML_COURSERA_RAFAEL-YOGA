@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, LLC - Our Menu</title>
+
+  <!-- Bootstrap 3 CSS -->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <header>
+    <nav class="navbar navbar-default" aria-label="Main navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#top">Food, LLC</a>
+
+          <!-- Only visible on extra-small screens -->
+          <button type="button"
+                  class="navbar-toggle collapsed visible-xs"
+                  data-toggle="collapse"
+                  data-target="#mobile-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- The menu is shown only on mobile; Bootstrap handles the toggle -->
+        <div class="collapse navbar-collapse visible-xs" id="mobile-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#chicken">Chicken</a></li>
+            <li><a href="#beef">Beef</a></li>
+            <li><a href="#sushi">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="text-center page-title">Our Menu</h1>
+
+    <!-- Required graded section: one full-width, tall Bootstrap grid column -->
+    <div class="row">
+      <section class="col-xs-12 menu-section" aria-labelledby="required-section-title">
+        <h2 id="required-section-title" class="text-center">Our Menu</h2>
+        <p>
+          Welcome to Food, LLC! This is the required tall section for the
+          assignment. It uses Bootstrap's grid so it spans the full row at
+          extra-small, small, medium, and large screen sizes.
+        </p>
+        <p>
+          Scroll down to see the rest of this section. You can replace this
+          sample text with your own menu description or other content.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          vitae justo sed erat interdum feugiat. Curabitur posuere, augue in
+          tempor facilisis, lectus risus aliquet nulla, a dignissim lorem
+          ligula non neque. Pellentesque habitant morbi tristique senectus et
+          netus et malesuada fames ac turpis egestas.
+        </p>
+        <p>
+          Donec tincidunt augue vitae ipsum vulputate, vel condimentum sem
+          volutpat. Duis id sapien nec nibh posuere volutpat. Sed porta
+          ultrices mi, at accumsan arcu sodales vitae. Nam ullamcorper, metus
+          at blandit feugiat, lorem lectus malesuada nisl, nec finibus massa
+          eros vel arcu.
+        </p>
+        <p>
+          This section is intentionally tall so that the browser page must
+          scroll, as requested in the assignment instructions.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- jQuery and Bootstrap 3 JavaScript are needed for the mobile menu toggle -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
