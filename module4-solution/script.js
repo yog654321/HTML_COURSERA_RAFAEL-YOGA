@@ -1,4 +1,3 @@
-```javascript
 var names = [
     "Yaakov",
     "John",
@@ -18,4 +17,3 @@ for (var i = 0; i < names.length; i++) {
         speakHello(names[i]);
     }
 }
-```
