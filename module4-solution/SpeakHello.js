@@ -1,4 +1,3 @@
-```javascript
 (function (window) {
     var speakWord = "Hello";
 
@@ -9,4 +8,3 @@
     window.speakHello = speak;
 
 })(window);
-```
